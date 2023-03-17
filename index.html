@@ -9,21 +9,36 @@
 
 </head>
 <body>
-    <nav class="navbar" width="100%">
+    <nav class="navbar_white" id="navbar_white" width="100%">
         <div class="navitems">
-            <img src="/Asset/Logo Design Final B_W 1200dpi_transparent_RGB.png" height="30px">
+            <img src="./Asset/Logo-Design-Final-B_W-1200dpi_transparent_RGB_White.png" height="30px">
+            <div class="navitems_wrapper">
+                <img class="navicon" src="./Asset/IG_white.png" height="14px">
+                <img class="navicon" src="./Asset/FB_white.png" height="14px">
+                <a href="#" class="signup white">SIGN UP</a>
+                </div>
+            </div>
+    </nav>
+    <nav class="navbar" id="navbar" width="100%">
+        <div class="navitems">
+            <img src="./Asset/Logo Design Final B_W 1200dpi_transparent_RGB.png" height="30px">
+            <div class="navitems_wrapper">
+            <img class="navicon" src="./Asset/IG.png" height="14px">
+            <img class="navicon" src="./Asset/FB.png" height="14px">
             <a href="#" class="signup">SIGN UP</a>
+            </div>
+        </div>
     </nav>
 
     <div class="banner">
-        <img class="banner_image" src="/Asset/Kythe_Website-v2_Desktop-Image-1.jpg">
+        <img class="banner_image" id="herobanner" src="./Asset/Kythe_Website-v2_Desktop-Image-1.jpg">
     </div>
     
 
 
 <section class="aboutus">
     <div class="container">
-        <img src="/Asset/Kythe_Website-v2_Desktop-Image-2.jpg" width="360px">
+        <img src="./Asset/Kythe_Website-v2_Desktop-Image-2.jpg" width="360px">
         <div class="text_wrapper">
             <h6>A Return to Old Style Highland Distilling</h6>
             <p>Kythe Distillery will be at the forefront of a new movement to revive ‘old style’ Scottish single malt whisky. Ours is an uncommonly ambitious project in pursuit of true and absolute quality - drawing on inspiration from the past to create a new Highland single malt that will stand as one of the most distinctive and charismatic in Scotland, and beyond. Our aim is to <b> recreate an extinct style of Scottish single malt whisky</b> - one not produced since the 1960s. 
@@ -34,7 +49,7 @@
                 <br><br>After careful planning and tireless effort by the Founders, Kythe Distillery was born in 2022. The Distillery’s site planning permission was obtained in 2023, and now procurement of the plant has commenced. We expect to finally begin distilling in 2024. 
                 </p>
         </div>
-        <img src="/Asset/Kythe_Website-v2_Desktop-Image-3.jpg" width="360px">
+        <img src="./Asset/Kythe_Website-v2_Desktop-Image-3.jpg" width="360px">
     </div>
 </section>
 
@@ -112,7 +127,7 @@
                 <p>Aaron is the founder of Club Qing, a Hong Kong-based independent bottler which also operates a whisky bar.  Aaron developed his passion in whisky around 2008 and rebranded his company Club Qing as an independent bottler in 2015, and has since grown the brand into a well-known independent bottler in Asia. Aaron also co-founded WhiskyNow!, a leading old & rare whisky festival in Hong Kong and is widely considered as an advocate of old-style whisky in Asia.
                 </p>
             </div>
-            <img src="/Asset/Kythe_Website-v2_Desktop-Image-9.jpg" width="360px">
+            <img src="./Asset/Kythe_Website-v2_Desktop-Image-9.jpg" width="360px">
             <div class="teamwrapper">
                 <h4>Ronnie Cox</h4>
                 <h6>– Brand Director Emeritus</h6>
@@ -130,7 +145,29 @@
     <div class="joinus">
         <h6 class="text_center"> Join Our Communication</h6>
         <p>There may be opportunities to purchase a cask directly from us in the future. We will not be selling via investment channels, all cask sales will be direct to consumers only. If you would like to hear about this or hear from us in general, please sign up below. 
-            <br>(All information you entered will be sent to us encrypted and stored encrypted. We take your privacy very seriously. Be sure to white-list our email @kythedistillery.com so our mails will not fall into your spam folder)</p>
+            <br>(All information you entered will be sent to us encrypted and stored encrypted. We take your privacy very seriously. <b>Be sure to white-list our email @kythedistillery.com so our mails will not fall into your spam folder)</b></p>
     </div>
+
+    <div class="signupform">
+        <form>
+            <label for="name">name</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="country">country</label><br>
+            <input type="text" id="country" name="country"><br>
+            <label for="email">email</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">tell us about yourself</label><br>
+            <input class="message" type="message" id="message" name="message"><br>
+            <input class="submit" type="submit" value="Submit">
+          </form>
+          
+    <footer>
+        <img class="footer_logo" src="./Asset/Logo Design Final B_W 1200dpi_transparent_RGB.png" height="30px">
+        <h6 class="footertext">Copyright © 2023 Kythe Distillery Co. Ltd. All rights reserved.</h6>
+    </footer>
+    </div>
+
+
+
 </body>
 </html>
