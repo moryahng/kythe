@@ -1,5 +1,12 @@
 var heroheight = document.getElementById('herobanner').clientHeight;
 document.getElementById("aboutus").style.marginTop = heroheight + "px";
+
+window.addEventListener('resize', function(event) {
+    var heroheight = document.getElementById('herobanner').clientHeight;
+    document.getElementById("aboutus").style.marginTop = heroheight + "px";
+}, true);
+
+
 //
 //window.onscroll = function (event) {
 //    var scroll = window.pageYOffset;

@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
 
 body{
     font-family: 'Unna', serif;
@@ -12,12 +15,25 @@ a{
     text-decoration: none;
     color: #383838;
 }
+
+i{
+    color: #383838;
+    font-size: 15px; 
+    margin-right: 16px;
+}
+
+i:hover{
+    color: #9B9B9B;
+
+}
+
 h4{
     font-family: 'Unna', serif;
     color: #383838;
     font-size: 26px;
     font-weight: 200;
     margin-bottom: 5px;
+    margin-top: 0;
 }
 
 h6{
@@ -38,7 +54,7 @@ p{
     color: #383838;
     line-height: 21px;
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 100;
 }
 
 form{
@@ -55,6 +71,7 @@ label{
     text-transform: uppercase;
 }
 
+
 input{
     height: 40px;
     width: 586px;
@@ -62,7 +79,31 @@ input{
     border: none;
     margin-top: 12px;
     margin-bottom: 40px;
+    font-family: 'Unna', serif;
+    color: #383838;
+    line-height: 21px;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
 }
+
+textarea{
+    height: 160px;
+    width: 546px;
+    background-color: rgba(155, 155, 155, 0.1);
+    border: none;
+    margin-top: 12px;
+    margin-bottom: 40px;
+    font-family: 'Unna', serif;
+    color: #383838;
+    line-height: 21px;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: left;
+    resize: none;
+    padding: 20px;
+}
+
 
 footer{
     padding-left: 40px;
@@ -111,8 +152,12 @@ footer{
     height: 80px;
     width: 100%;
     background-color: rgba(242, 242, 242, 0.7);
+}
 
-
+.navitems_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navitems{
@@ -131,10 +176,21 @@ footer{
 .signup{
     font-weight: 600;
     letter-spacing: 0.162em;
+    font-size: 14px;
+}
+.signup:hover{
+    color: #9B9B9B;
 }
 
 .aboutus{
-    padding: 80px 18vw;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: auto auto;
+    width: 820px;
+}
+
+.aboutus.team{
+    padding-top: 40px; 
 }
 .notes{
     text-align: right;
@@ -157,7 +213,7 @@ footer{
 .container{
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 100px;
+    grid-gap: 40px 100px;
     align-items: center;
 }
 
@@ -171,7 +227,10 @@ footer{
 }
 
 .old{
-    margin: 60px auto;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,7 +238,7 @@ footer{
 }
 
 .quote{
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     text-align: center;
 }
 
@@ -190,7 +249,11 @@ footer{
 }
 
 .text_wrapper_old{
-    margin-top: 40px;
+    margin-top: 80px;
+    width: 560px;
+}
+.text_wrapper_old.team{
+    margin-top: 0px;
     width: 560px;
 }
 
@@ -202,9 +265,12 @@ footer{
     margin-left: auto;
     margin-right: auto;
 }
+.spaceline.team{
+    margin-top: 0;
+}
 
 .teamphoto{
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
 }
 
@@ -226,7 +292,7 @@ footer{
 
 .joinus{
     width: 560px;
-    margin: 50px auto;
+    margin: 80px auto;
     text-align: center;
 }
 
@@ -246,10 +312,40 @@ footer{
     border: 1px solid #4A4A4A;
 }
 
+.submit:hover{
+    border: 1px solid #9B9B9B;
+    color: #9B9B9B;
+}
+
 .footer_logo{
     opacity: 60%;
 }
 
-#draft{
-    margin-bottom: 40px;
+.richtext{
+    text-align: left;
+
 }
+
+#draft{
+    margin-bottom: 0px;
+}
+
+.nobg{
+    background-color: transparent;
+}
+
+.thankyou_container{
+    background-image: url("./Asset/Kythe_Website-v2_Desktop-Image-10.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: top center;
+}
+
+.thankyou {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
