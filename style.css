@@ -49,6 +49,10 @@ h6{
 
 
 }
+strong{
+    font-style: italic;
+}
+
 p{
     font-family: 'Unna', serif;
     color: #383838;
